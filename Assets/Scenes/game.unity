@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d81b82eed730dd0439003d7b22aa1a05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myPlayer: {fileID: 1079868839}
+  myPlayer: {fileID: 0}
   damage: 0
 --- !u!1 &340062621
 GameObject:
@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d81b82eed730dd0439003d7b22aa1a05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myPlayer: {fileID: 1079868839}
+  myPlayer: {fileID: 0}
   damage: 0
 --- !u!1 &385531607
 GameObject:
@@ -765,7 +765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d81b82eed730dd0439003d7b22aa1a05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myPlayer: {fileID: 1079868839}
+  myPlayer: {fileID: 0}
   damage: 0
 --- !u!1001 &866435367
 PrefabInstance:
@@ -1575,30 +1575,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1079868835}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2e9b548e6146724089bb872b831ce28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 0
-  Max_health: 200
-  Helth_Slider: {fileID: 385531609}
---- !u!114 &1079868839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079868835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51aa1ae4c72aec544a0576d9d182c2dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cef426015bebdb40b88c89b0735ee55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
   hitColliders:
   - {fileID: 320074125}
-  - {fileID: 383557009}
-  - {fileID: 1523499057}
-  - {fileID: 863554364}
   playerIndex: 1
 --- !u!95 &1079868840
 Animator:
@@ -1650,6 +1632,35 @@ CapsuleCollider:
   m_Height: 1.87
   m_Direction: 1
   m_Center: {x: 0, y: 0.92, z: 0}
+--- !u!114 &1079868843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079868835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7eb87d4605008e4da357ed2c1316fcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 0
+  Max_health: 200
+  Helth_Slider: {fileID: 385531609}
+--- !u!114 &1079868844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079868835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81b82eed730dd0439003d7b22aa1a05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPlayer: {fileID: 1079868837}
+  damage: 20
 --- !u!1 &1091445352
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,7 +2482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d81b82eed730dd0439003d7b22aa1a05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myPlayer: {fileID: 1079868839}
+  myPlayer: {fileID: 0}
   damage: 0
 --- !u!1001 &1593966788
 PrefabInstance:
@@ -2563,7 +2574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b0bbcb24d2c7ca5449eec33f8f765137, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.28
+      value: -11.44
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b0bbcb24d2c7ca5449eec33f8f765137, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2571,7 +2582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b0bbcb24d2c7ca5449eec33f8f765137, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b0bbcb24d2c7ca5449eec33f8f765137, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2723,31 +2734,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1703957980}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51aa1ae4c72aec544a0576d9d182c2dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 5cef426015bebdb40b88c89b0735ee55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
   hitColliders:
   - {fileID: 870370881}
-  - {fileID: 1102836167}
-  - {fileID: 340062621}
-  - {fileID: 1425725940}
   playerIndex: 2
---- !u!114 &1703957982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703957980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2e9b548e6146724089bb872b831ce28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 0
-  Max_health: 200
-  Helth_Slider: {fileID: 1516712823}
 --- !u!95 &1703957983
 Animator:
   serializedVersion: 4
@@ -2803,6 +2796,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b0bbcb24d2c7ca5449eec33f8f765137, type: 3}
   m_PrefabInstance: {fileID: 1350875289}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1703957987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703957980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7eb87d4605008e4da357ed2c1316fcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 0
+  Max_health: 200
+  Helth_Slider: {fileID: 1516712823}
+--- !u!114 &1703957988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703957980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81b82eed730dd0439003d7b22aa1a05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myPlayer: {fileID: 1703957981}
+  damage: 20
 --- !u!1 &1719411491
 GameObject:
   m_ObjectHideFlags: 0
@@ -3117,6 +3139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
